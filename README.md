@@ -2,9 +2,9 @@
 
 ---
 
-### **NAME: SAKTHIVEL S**  
-### **DEPARTMENT:B.TECH IT**  
-### **ROLL NO:212223220090**  
+### **NAME : SAKTHIVEL S**  
+### **DEPARTMENT : B.TECH IT**  
+### **ROLL NO : 212223220090**  
 ### **DATE OF EXPERIMENT:**  
 
 ---
