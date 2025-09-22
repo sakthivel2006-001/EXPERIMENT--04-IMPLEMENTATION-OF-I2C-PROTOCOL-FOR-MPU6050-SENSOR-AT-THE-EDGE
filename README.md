@@ -2,9 +2,9 @@
 
 ---
 
-### **NAME:**  
-### **DEPARTMENT:**  
-### **ROLL NO:**  
+### **NAME: SAKTHIVEL S**  
+### **DEPARTMENT:B.TECH IT**  
+### **ROLL NO:212223220090**  
 ### **DATE OF EXPERIMENT:**  
 
 ---
@@ -66,7 +66,7 @@ The **accelerometer** measures linear acceleration in **X, Y, Z axes**, while th
 ---
 
 ## **PROGRAM (MicroPython)**  
-```python
+```
 from machine import Pin, I2C
 import utime
 
@@ -79,9 +79,9 @@ ACCEL_XOUT_H = 0x3B
 GYRO_XOUT_H = 0x43
 
 # Initialize I2C
-sda = Pin(20)  # Define your SDA pin
-scl = Pin(21)  # Define your SCL pin
-i2c = I2C(1, scl=scl, sda=sda, freq=400000)  # Use I2C1
+sda = Pin(0)  # Define your SDA pin
+scl = Pin(1)  # Define your SCL pin
+i2c = I2C(0, scl=scl, sda=sda, freq=400000)  # Use I2C1
 
 def mpu6050_init():
     i2c.writeto_mem(MPU6050_ADDR, PWR_MGMT_1, b'\x00')  # Wake up MPU6050
@@ -117,15 +117,13 @@ while True:
 
 ## **OUTPUT:**  
 When the above program is executed, the output on the serial monitor will display real-time acceleration and gyroscope values, such as:
-```
-Accel: X=0.02g, Y=-0.01g, Z=1.00g | Gyro: X=0.05°/s, Y=-0.02°/s, Z=0.01°/s
-Accel: X=0.03g, Y=-0.02g, Z=1.01g | Gyro: X=0.06°/s, Y=-0.03°/s, Z=0.02°/s
-...
-```
+
+<img width="1920" height="1200" alt="Screenshot (175)" src="https://github.com/user-attachments/assets/9d965a3f-466a-41d4-b9eb-397f9431b432" />
+
+
 ---
 
 ## **RESULT:**  
 The **MPU6050 sensor** was successfully interfaced with the **Raspberry Pi Pico**, and real-time **acceleration and gyroscope data** were read and displayed. The sensor values can be used for **motion tracking, tilt detection, and gesture control applications**.
 
 ---
-
